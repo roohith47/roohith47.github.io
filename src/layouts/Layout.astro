@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 const { title = "Rohith Kumar Tappa" } = Astro.props;
 ---
 
@@ -11,24 +12,28 @@ const { title = "Rohith Kumar Tappa" } = Astro.props;
   </head>
 
   <body>
-    <header style="padding: 1.25rem 0; border-bottom: 1px solid #ddd;">
-      <nav style="display:flex; gap: 1rem; align-items:center;">
-        <a href="/" style="font-weight:600;">Rohith</a>
-        <a href="/projects">Projects</a>
-        <a href="/about">About</a>
-        <a href="/resume">Resume</a>
-        <a href="/contact">Contact</a>
-      </nav>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="/">Rohith</a>
+        <div class="nav-links">
+          <a href="/projects">Projects</a>
+          <a href="/about">About</a>
+          <a href="/resume">Resume</a>
+        </div>
+      </div>
     </header>
 
-    <main style="padding: 2rem 0; max-width: 900px; margin: 0 auto;">
+    <main class="container">
       <slot />
     </main>
 
-    <footer style="padding: 2rem 0; border-top: 1px solid #ddd; margin-top: 2rem;">
-      <p style="max-width: 900px; margin: 0 auto;">
-        © {new Date().getFullYear()} Rohith Kumar Tappa
-      </p>
+    <footer>
+      <div class="container">
+        <small>
+          © {new Date().getFullYear()} Rohith Kumar Tappa ·
+          <a href="mailto:roohithtappa@gmail.com">roohithtappa@gmail.com</a>
+        </small>
+      </div>
     </footer>
   </body>
 </html>

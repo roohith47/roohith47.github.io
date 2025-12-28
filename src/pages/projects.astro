@@ -1,40 +1,75 @@
-<main>
-    <!-- your existing homepage content -->
-  </main>
-</Layout>
-<main>
-  <h1>Projects</h1>
+---
+import Layout from "../layouts/Layout.astro";
+---
 
-  <section>
-    <h2>Pavement Damage Classification</h2>
+<Layout title="Projects | Rohith Kumar Tappa">
+  <div class="card hero">
+    <div class="kicker"><span class="kicker-dot"></span> Selected work</div>
+    <h1>Projects</h1>
     <p>
-      Deep learning–based image classification system to identify pavement
-      cracks, potholes, and bleeding using MobileNetV2.
+      A few projects that show how I approach problem framing, modeling, and delivery.
+      (I can add more + link demos/GitHub as you share them.)
     </p>
-    <p>
-      Achieved 98.57% accuracy on a 3-class dataset. Work resulted in a
-      conference paper submission.
-    </p>
-    <p>
-      Tech: Python, TensorFlow, Keras, CNNs, Transfer Learning
-    </p>
-  </section>
+  </div>
 
-  <hr />
+  <div class="grid two section">
+    <section class="card col-7">
+      <h2>Pavement Damage Classification</h2>
+      <p>
+        Deep learning image classifier to identify pavement cracks, potholes, and bleeding
+        using MobileNetV2 transfer learning.
+      </p>
 
-  <section>
-    <h2>Plant Disease Detection</h2>
-    <p>
-      Computer vision system for detecting and diagnosing plant diseases
-      from leaf images using convolutional neural networks.
-    </p>
-    <p>
-      Focused on feature extraction, model comparison, and performance
-      evaluation.
-    </p>
-    <p>
-      Tech: Python, CNNs, Image Processing
-    </p>
-  </section>
-</main>
+      <div class="badges">
+        <span class="badge">MobileNetV2</span>
+        <span class="badge">Transfer Learning</span>
+        <span class="badge">Computer Vision</span>
+      </div>
+
+      <hr />
+
+      <p><strong>Result:</strong> 98.57% accuracy on a 3-class dataset.</p>
+      <p><strong>Stack:</strong> Python, TensorFlow/Keras, CNNs</p>
+
+      <div class="cta">
+        <a class="button primary" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button" href="#" target="_blank" rel="noreferrer">Paper / Report</a>
+      </div>
+    </section>
+
+    <section class="card col-5">
+      <h2>Plant Disease Detection</h2>
+      <p>
+        CNN-based pipeline for detecting and diagnosing plant diseases from leaf images,
+        comparing multiple architectures and evaluating performance.
+      </p>
+
+      <div class="badges">
+        <span class="badge">CNNs</span>
+        <span class="badge">Image Data</span>
+        <span class="badge">Evaluation</span>
+      </div>
+
+      <hr />
+
+      <p><strong>Focus:</strong> model comparison, feature learning, validation.</p>
+      <p><strong>Stack:</strong> Python, Deep Learning</p>
+
+      <div class="cta">
+        <a class="button primary" href="#" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <section class="card col-12">
+      <h2>Want to see more?</h2>
+      <p>
+        I can add additional projects like micro-Doppler work, analytics case studies,
+        or coursework deliverables — with screenshots and concise metrics.
+      </p>
+      <div class="cta">
+        <a class="button primary" href="/contact">Contact me</a>
+        <a class="button" href="/">Back to Home</a>
+      </div>
+    </section>
+  </div>
 </Layout>

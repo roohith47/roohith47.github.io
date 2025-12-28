@@ -2,24 +2,42 @@
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout title="Rohith Kumar Tappa">
-<main>
-  <section>
-    <h1> Hi, This is Rohith Kumar Tappa </h1>
+<div class="grid two">
+  <section class="card hero col-7">
+    <div class="kicker"><span class="kicker-dot"></span> MSIS @ UMD · Data + ML</div>
+    <h1>Simple, practical work—built with data and shipped with clarity.</h1>
     <p>
-      Masters of Scienc in Information Systems at University of Maryland, College Park · Data Analytics · Machine Learning ·
-      Digital Transformation
+      I’m Rohith Kumar Tappa. I build ML and analytics projects (especially computer vision),
+      and I like turning ideas into clean deliverables that people can actually use.
     </p>
 
-    <p>
-      I build data-driven and ML-powered systems, with experience in
-      computer vision, applied analytics, and project-based problem solving.
-    </p>
+    <div class="badges">
+      <span class="badge">Computer Vision</span>
+      <span class="badge">Transfer Learning</span>
+      <span class="badge">Python</span>
+      <span class="badge">Analytics</span>
+    </div>
 
-    <div style="margin-top: 1.5rem;">
-      <a href="/projects">View Projects</a> ·
-      <a href="/about">About Me</a>
+    <div class="cta">
+      <a class="button primary" href="/projects">View Projects</a>
+      <a class="button primary" href="/resume">Resume</a>
     </div>
   </section>
-</main>
+
+  <section class="card col-5">
+    <div class="split">
+      <h2>Highlights</h2>
+      <a class="button" href="/projects">See all</a>
+    </div>
+    <p><strong>Pavement Damage Classification</strong><br/>MobileNetV2 transfer learning, 98.57% accuracy.</p>
+    <p><strong>Plant Disease Detection</strong><br/>CNN-based diagnosis pipeline + evaluation.</p>
+    <p><strong>Leadership</strong><br/>IEEE + TEDx roles across mentoring, promotion, sponsorship.</p>
+  </section>
+
+  <section class="card col-12 section">
+    <h2>What I’m looking for</h2>
+    <p>Internships / full-time roles in Data Analytics, ML, Product Analytics, or Digital Transformation.</p>
+  </section>
+</div>
 </Layout>
 
