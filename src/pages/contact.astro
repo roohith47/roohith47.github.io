@@ -3,11 +3,25 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contact | Rohith Kumar Tappa">
-  <main>
-    <h1>Contact</h1>
+  <div class="card hero">
+    <h1>Get in Touch</h1>
+    <p>I'm always interested in connecting with people working on data, technology, and business challenges.</p>
 
-    <p>Email: <a href="mailto:tappa03@umd.edu">tappa03@umd.edu</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rohithtappa/" target="_blank" rel="noreferrer">linkedin.com/in/rohithtappa</a></p>
-    <p>GitHub: <a href="https://github.com/roohith47" target="_blank" rel="noreferrer">github.com/roohith47</a></p>
-  </main>
+    <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+      <div>
+        <p style="color: var(--yellow); font-weight: 600; margin: 0 0 0.5rem 0;">Email</p>
+        <a class="button primary" href="mailto:tappa03@umd.edu" style="width: fit-content;">tappa03@umd.edu</a>
+      </div>
+
+      <div>
+        <p style="color: var(--yellow); font-weight: 600; margin: 0 0 0.5rem 0;">LinkedIn</p>
+        <a class="button primary" href="https://www.linkedin.com/in/rohithtappa/" target="_blank" rel="noreferrer" style="width: fit-content;">linkedin.com/in/rohithtappa</a>
+      </div>
+
+      <div>
+        <p style="color: var(--yellow); font-weight: 600; margin: 0 0 0.5rem 0;">GitHub</p>
+        <a class="button primary" href="https://github.com/roohith47" target="_blank" rel="noreferrer" style="width: fit-content;">github.com/roohith47</a>
+      </div>
+    </div>
+  </div>
 </Layout>
